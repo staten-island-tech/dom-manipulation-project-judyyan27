@@ -1,21 +1,17 @@
-/* console.log("connected");
-const header = document.querySelector("h1");
+console.log("connected");
+/* const header = document.querySelector("h1");
 console.log(header.parentElement);
  */
+
 const DOMSelectors = {
-  header: document.querySelector("h1"),
-  description: document.querySelector(".card-desc"),
-  items: document.querySelectorAll("li"),
+  header: document.querySelectorbyid("header"),
+  description: document.querySelector("#card-desc"),
+  items: document.querySelectorAll("list"),
 };
 
-const student = {
-  name: "J",
-  age: 14,
-};
+console.log(DOMSelectors.header);
 
-console.log(DOMSelectors.description);
-
-function changeColor() {
+/* function changeColor() {
   let button = document.querySelector("button");
   console.log(button);
   button.addEventListener("submit", function (event) {
@@ -28,4 +24,4 @@ function changeColor() {
     button.style.backgroundColor = " blue";
   });
 }
-changeColor();
+ */
