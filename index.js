@@ -10,6 +10,21 @@ const DOMSelectors = {
 };
 
 console.log(DOMSelectors.header);
+console.log(DOMSelectors.description);
+
+function changeColor() {
+  let button = document.querySelector("button");
+  console.log(button);
+  button.addEventListener("click", function (event) {
+    // listen to click even
+    event.preventDefault();
+    // prevents default behavior
+    console.log(event.target);
+    //logging quick event
+    button.style.backgroundColor = "red";
+  });
+}
+changeColor();
 
 /* function changeColor() {
   let button = document.querySelector("button");
