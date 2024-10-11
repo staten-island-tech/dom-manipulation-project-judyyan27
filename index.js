@@ -1,20 +1,17 @@
 console.log("connected");
-/* const header = document.querySelector("h1");
-console.log(header.parentElement);
- */
 
 const DOMSelectors = {
-  header: document.querySelectorbyid("header"),
-  description: document.querySelector("#card-desc"),
+  header: document.querySelectorbyid("#header"),
+  text: document.querySelector(".text"),
   items: document.querySelectorAll("list"),
   button: document.querySelectorAll("btn"),
 };
 
 console.log(DOMSelectors.header);
-console.log(DOMSelectors.description);
+console.log(DOMSelectors.text);
 
 function changeColor() {
-  let button = document.querySelector("button");
+  let button = document.querySelector("btn");
   console.log(button);
   button.addEventListener("click", function (event) {
     // listen to click even
