@@ -10,7 +10,7 @@ console.log(DOMSelectors.input_desc);
 function changeColor() {
   let button = DOMSelectors.button;
   button.button.addEventListener("click", function () {
-    // listen to click even
+    // listen to click event
     event.preventDefault();
     // prevents default behavior
     console.log(event.target);
