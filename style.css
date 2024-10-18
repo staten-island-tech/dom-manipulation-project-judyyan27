@@ -21,3 +21,10 @@ label, button, form, .input, input{
     color: rgb(204, 50, 181);
     text-align: center;
 }
+
+#card
+
+#box-container{
+    margin: 2rem;
+    size: 100%;
+}
