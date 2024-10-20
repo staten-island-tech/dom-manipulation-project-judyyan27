@@ -17,10 +17,11 @@ button.addEventListener("click", function (event) {
   DOMSelectors.box.insertAdjacentHTML(
     "beforeend",
     `<div id="container-box">
-    <div class="card">
-      <h1 class="card-title">${name}</h1>
-      <p class="text">${description}</p>
-    </div> 
+      <div class="card">
+        <h1 class="card-title">${name}</h1>
+        <p class="text">${description}</p>
+        
+      </div> 
     </div>`
   );
 });

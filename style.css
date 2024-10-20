@@ -10,7 +10,7 @@ body, html
 
 #header{
     text-align: center;
-    font-size: 6rem;
+    font-size: 4rem;
     padding:0.2rem;
     color: rgb(204, 50, 181);
 }
@@ -22,7 +22,18 @@ label, button, form, .input, input{
     text-align: center;
 }
 
-#card
+.card {
+    width: 20rem;
+    height: 26rem;
+    border-radius: 1rem;
+    border-width: 1rem;
+    margin:1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 #box-container{
     margin: 2rem;
