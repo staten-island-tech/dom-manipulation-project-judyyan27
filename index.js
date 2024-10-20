@@ -6,46 +6,8 @@ const DOMSelectors = {
   name: document.querySelectorbyid("#name"),
   description: document.querySelectorbyid("#description"),
 };
-button.addEventListener("click", function (event) {
-  event.preventDefault();
-
-  let name = DOMSelectors.name.value;
-  let description = DOMSelectors.description.value;
-
-  console.log(document.querySelector("input").value);
-
-  DOMSelectors.box.insertAdjacentHTML(
-    "beforeend",
-    `<div id="container-box">
-      <div class="card">
-        <h1 class="card-title">${name}</h1>
-        <p class="text">${description}</p>
-        
-      </div> 
-    </div>`
-  );
-});
-/* 
-function changeColor() {
-  let button = DOMSelectors.button;
-  button.button.addEventListener("click", function () {
-    // listen to click event
-    event.preventDefault();
-    // prevents default behavior
-    console.log(event.target);
-    //logging quick event
-    button.style.backgroundColor = "red";
-  });
-}
-changeColor();
-
-// DOMSelectors.form.addEventListener("submit", function ()){
-
-DOMSelectors.form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  console.lof(document.querySelector("input").value);
-});
-
+//button.addEventListener("click", function (event) {
+//  event.preventDefault();
 const buttons = document.querySelectorAll("button");
 buttons.forEach((btn) =>
   btn.addEventListener("click", function (event) {
@@ -53,7 +15,26 @@ buttons.forEach((btn) =>
   })
 );
 
- */
+DOMSelectors.form.addEventListener("click", function (event) {
+  event.preventDefault();
+  console.log(document.querySelector("input").value);
+});
+
+let name = DOMSelectors.name.value;
+let description = DOMSelectors.description.value;
+
+console.log(document.querySelector("input").value);
+
+DOMSelectors.box.insertAdjacentHTML(
+  "beforeend",
+  `<div class="card">
+          <h1 class="card-title">${name}</h1>
+          <p class="card-desc">${description}</p>
+          <img class="card-img" src="https://img.freepik.com/premium-photo/sweetheart-delights-valentines-day-cute-dessert-clipart_1077802-71338.jpg"
+            alt="image of a dessert"
+          />
+        </div>`
+);
 
 // event listener for form
 // get values from form for widget object
