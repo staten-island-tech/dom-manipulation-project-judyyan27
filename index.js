@@ -6,22 +6,11 @@ const DOMSelectors = {
   description: document.querySelector(`#description`),
 };
 
-const buttons = document.querySelectorAll("button");
-buttons.forEach((btn) =>
-  btn.addEventListener("click", function (event) {
-    console.log(event.target);
-  })
-);
-
-DOMSelectors.form.addEventListener("click", function (event) {
+DOMSelectors.button.addEventListener("click", function (event) {
   event.preventDefault();
-  console.log("test");
-  console.log(document.querySelector("input").value);
 
-  let name = DOMSelectors.name.value;
-  let description = DOMSelectors.description.value;
-
-  console.log(document.querySelector("input").value);
+  const name = DOMSelectors.name.value;
+  const description = DOMSelectors.description.value;
 
   DOMSelectors.container.insertAdjacentHTML(
     "beforeend",
