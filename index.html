@@ -12,24 +12,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-
-    <style>
-      h1 {
-        font-family: "Mochiy Pop One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      h2 {
-        font-family: "Mochiy Pop One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      p {
-        font-family: "Mochiy Pop One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-    </style>
   </head>
 
   <body>
@@ -37,20 +19,21 @@
       <h2 id="header">Dessert Card Generator!</h2>
       <form action="">
         <div class="input">
-          <label for="info1">Food Name:</label>
+          <label for="name">Food Name:</label>
           <input type="text" name="info" id="name" />
         </div>
 
         <div class="input">
-          <label for="info2">Fav Flavor:</label>
+          <label for="description">Fav Flavor:</label>
           <input type="text" name="info" id="description" />
         </div>
-
-        <button id="btn" type="submit">Submit Button ☜(ﾟヮﾟ☜)</button>
       </form>
     </div>
+
+    <button id="btn" type="submit">Submit Button ☜(ﾟヮﾟ☜)</button>
+
     <div id="container-box">
-      <div class="card">
+      <!--       <div class="card">
         <h1 class="card-title">${name}</h1>
         <p class="card-desc">${description}</p>
         <img
@@ -58,7 +41,8 @@
           src="https://img.freepik.com/premium-photo/sweetheart-delights-valentines-day-cute-dessert-clipart_1077802-71338.jpg"
           alt="image of a dessert"
         />
-      </div>
+        <button type="remove" class= "remove">remove</button>
+      </div> -->
     </div>
 
     <script source="index.js"></script>
