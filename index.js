@@ -24,9 +24,8 @@ DOMSelectors.button.addEventListener("click", function (event) {
         </div>`
   );
 
-  const newBox = DOMSelectors.container.lastElementChild;
-
-  const removeButton = newBox.querySelector(".remove");
+  const newcard = DOMSelectors.container.lastElementChild;
+  const removeButton = newcard.querySelector(".remove");
 
   removeButton.addEventListener("click", function () {
     newBox.remove();
